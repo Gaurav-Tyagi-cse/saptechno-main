@@ -1,0 +1,209 @@
+
+    <style>
+        /* nav{
+            position: fixed;
+            left: 0;
+            top: 0px;
+            z-index: 10 !important;
+            background-color: #e509090f !important;
+            backdrop-filter: blur(10px);
+        } */
+         
+        .navbar-nav .nav-link {
+            font-weight: 500;
+            padding: 10px 15px;
+            transition: 0.3s;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #dc3545; /* Red hover color */
+        }
+
+        .btn-quote {
+            background-color: #dc3545 !important;
+            color: white;
+            font-weight: 600;
+            padding: 10px 20px;
+            border-radius: 50px;
+            text-transform: uppercase;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
+        }
+
+        .btn-quote:hover {
+            background-color: #b02a37;
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Dropdown on hover */
+        .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        .dropdown-menu {
+            display: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        /* Styling for dropdown items */
+        .dropdown-menu .dropdown-item {
+            padding: 12px 20px;
+            transition: background-color 0.3s;
+        }
+
+        .dropdown-menu .dropdown-item:hover {
+            background-color: #f8f9fa;
+        }
+        .offcanvas-side{
+            background-color: #ffffffaf;
+            padding: 0px 20px;
+            padding-bottom: 400px;
+            /* height: 1600px !important; */
+            backdrop-filter: blur(10px);
+            
+        }
+       /* Navbar Toggler */
+.navbar-toggler {
+    border: none;
+    outline: none;
+    background-color: transparent; /* Make button background transparent */
+    box-shadow: none; /* Remove box shadow */
+    padding: 10px; /* Adjust padding for better visual appearance */
+}
+
+.navbar-toggler:hover,
+.navbar-toggler:focus {
+    border: none !important;
+    outline: none !important;
+    background-color: #fff; 
+    box-shadow:none; 
+}
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: 0 0 0 !important;
+}
+
+.progresss {
+            width: 0%;
+            height: 4px;
+            position: fixed;
+            border-radius: 15px;
+            top: 0;
+            left: 0;
+            background-color: #a5cd38;
+            z-index: 9999;
+            transition: width 0.2s ease-out;
+            z-index: 12345672;
+        }
+    </style>
+</head>
+<body>
+   
+   
+<!-- 🌟 Navbar -->
+ 
+<nav class="navbar navbar-expand-lg shadow-sm">
+    <div id="progres" class="progresss"></div>
+    <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand fw-bold" href="index.html">
+            <img src="./logo-removebg-preview (3) (1).webp" alt="Logo" height="50">
+        </a>
+
+        <!-- Hamburger Menu (Visible only on lg and below) -->
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Links (Visible on large screens) -->
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto d-flex gap-4">
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="index.html">Home</a>
+                </li>
+
+                <!-- Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active text-dark" href="product.html" id="servicesDropdown" role="button" data-bs-toggle="dropdown">
+                        Product
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                        <li><a class="dropdown-item" href="develop.html">Software Development</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="web.html">Web Development</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="app.html">App Development</a></li>
+                        <li><hr><a class="dropdown-item" href="marketing.html">Digital Marketing</a></li>
+                    </ul>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="about.html">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="Contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-primary d-none d-lg-block" href="index.html#choose">GET A QUOTE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-primary d-none d-lg-block" href="productdemo.html">GET DEMO</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- 🌟 Offcanvas Menu (Sidebar) -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+    <!-- <div class="offcanvas-header">
+       
+    </div> -->
+    <div class="offcanvas-side " >
+        <div class="headtop d-flex align-items-center justify-content-between py-3 px-3">
+            <h5 class="offcanvas-title">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+            </li>
+
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="product.html" id="servicesDropdown" role="button" data-bs-toggle="dropdown">
+                    Product
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                    <li><a class="dropdown-item" href="develop.html">Software Development</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="develop.html">Web Development</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="develop.html">App Development</a></li>
+                </ul>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="Contact.html">Contact</a>
+            </li>
+
+            <!-- "GET A QUOTE" Button (Visible inside Offcanvas) -->
+            <li class="nav-item mt-3" >
+                <a class="btn btn-primary w-100" href="index.html#choose">GET A QUOTE</a>
+            </li>
+            <li class="nav-item mt-3" >
+                <a class="btn btn-primary w-100" href="productdemo.html">GET DEMO</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<script src="Assets/js/Header.js"></script>
