@@ -595,6 +595,7 @@ html,body {
 
 .box{
   width: 100% !important;
+  height: fit-content !important;
 }
 
 /* success */
