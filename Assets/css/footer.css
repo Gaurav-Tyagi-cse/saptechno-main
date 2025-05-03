@@ -1,0 +1,612 @@
+
+
+
+    /* Base Footer Styles */
+    .footer {
+        width: 100%;
+        background-color: #212f3d;
+        background-image: linear-gradient(32deg, #090909 30px, transparent);
+        background-size: 60px 60px;
+        background-position: -5px -5px;
+        overflow-x: hidden;
+    }
+    
+    .footer-logo {
+        margin-bottom: 20px;
+    }
+    
+    .footer-about p {
+        color: rgba(255, 255, 255, 0.836);
+        margin-bottom: 20px;
+        line-height: 1.6;
+        font-size: 20px;
+    }
+    
+    .footer h2 {
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    
+    .footer h4 {
+        color: white;
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 25px;
+        position: relative;
+        padding-bottom: 10px;
+    }
+    
+    .footer a {
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+    
+    .footer a:hover {
+        color: #009933;
+    }
+    
+    .footer-social a {
+        color: white;
+        background-color: white;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+        transition: background-color 0.3s;
+    }
+    
+    .footer-social a:hover {
+        background-color: #0d6dfd00;
+    }
+    
+    .footer-links li {
+        margin-bottom: 15px;
+    }
+    
+    .footer-links a {
+        color: rgba(255, 255, 255, 0.87);
+        transition: color 0.3s;
+        text-decoration: none;
+        font-size: 30px;
+    }
+    
+    .footer-links a:hover {
+        color: #009933;
+    }
+    
+    .footer-contact li {
+        margin-bottom: 15px;
+        display: flex;
+        margin-top: 15px;
+    }
+    
+    .footer-contact li i {
+        width: 30px;
+        color: #009933;
+        font-size: 18px;
+    }
+    
+    .footer-contact li span {
+        color: rgba(255, 255, 255, 0.849);
+        font-size: 18px;
+        margin-left: 7px;
+    }
+    
+    .footer-bottom {
+        padding: 20px 0;
+        margin-top: 60px;
+    }
+    
+    .footer-bottom p {
+        margin-bottom: 0;
+        color: rgba(255, 255, 255, 0.7);
+    }
+    
+    @media (max-width: 767px){
+        .footer-about p {
+            display: none;
+        }
+    }
+    
+    /* Footer dropdowns for mobile */
+    .footer-dropdown {
+        margin-bottom: 20px;
+    }
+    
+    .footer-dropdown-toggle {
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+        color: white;
+    }
+    
+    .footer-dropdown-menu {
+        list-style: none;
+        padding-left: 0;
+    }
+    
+    /* Copyright text styling */
+    .custom-border {
+        border-color: white !important;
+        display: inline-block;
+    }
+    
+    .custom-border::before, .custom-border::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        width: 100px;
+        height: 2px;
+        background-color: #fff;
+    }
+    
+    .custom-border::before {
+        left: -100px;
+    }
+    
+    .custom-border::after {
+        right: -100px;
+    }
+    
+    /* For large screens (desktops 1200px and up) */
+    @media (min-width: 1200px) {
+        .foot {
+            padding-left: 50px;
+        }
+        
+        .text-effect .color-change {
+            font-size: 4rem;
+        }
+    }
+    
+    /* For tablets (768px to 991px) */
+    @media (max-width: 991px) and (min-width: 768px) {
+        /* Show the dropdown version for tablets */
+        .d-md-block.d-lg-none {
+            display: block !important;
+        }
+        
+        .d-none.d-lg-block {
+            display: none !important;
+        }
+        
+        .lh-1.magnet[style*="font-size: 5rem"] {
+            font-size: 3rem !important;
+        }
+        
+        /* Fix the footer spacing and layout */
+        .col-md-7.col-12.col-lg-4 {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .col-lg-3.col-md-6[style*="padding-left: 50px"] {
+            padding-left: 15px !important;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        
+        .main {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+        .text-effect {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        
+        .text-effect .color-change {
+            font-size: 4.5rem;
+        }
+        
+        /* Footer dropdown styling for tablet */
+        .footer-dropdown-toggle {
+            font-size: 1.25rem;
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .footer-dropdown-menu {
+            margin-top: 10px;
+        }
+        
+        .footer-dropdown-menu li {
+            margin-bottom: 12px;
+        }
+        
+        /* Improve spacing of the copyright text */
+        .col-md-12.py-3.text-center {
+            margin-top: 20px;
+        }
+        
+        .custom-border {
+            font-size: 0.9rem;
+            padding: 8px 15px !important;
+        }
+        
+        /* Fix for the Get In Touch section */
+        .col-md-12.text-center h2 {
+            font-size: 1.75rem;
+        }
+    }
+    
+    
+    /* For extra small devices (phones, less than 576px) */
+    @media (max-width: 575px) {
+        .lh-1.magnet[style*="font-size: 5rem"] {
+            font-size: 3rem !important;
+        }
+        
+        .footer h2 {
+            font-size: 1.5rem;
+        }
+        
+        .main {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 8px;
+        }
+        
+        .up, .down {
+            gap: 8px;
+        }
+        
+        .card {
+            width: 40px;
+            height: 40px;
+        }
+        
+        .custom-border {
+            font-size: 0.75rem;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        
+        /* Make horizontal lines shorter on very small screens */
+        .custom-border::before, 
+        .custom-border::after {
+            width: 30px;
+        }
+        
+        .custom-border::before {
+            left: -35px;
+        }
+        
+        .custom-border::after {
+            right: -35px;
+        }
+        
+        .footer-logo {
+            margin-top: -20px;
+        }
+        
+        .footer-bottom p {
+            color: rgba(255, 255, 255, 0.7);
+            margin-top: -60px;
+        }
+    }
+    
+    .wave span {
+        display: inline-block;
+        animation: waveUpDown 1.5s infinite ease-in-out;
+      }
+    
+      /* Stagger each letter's animation */
+      .wave span:nth-child(1) { animation-delay: 0s; }
+      .wave span:nth-child(2) { animation-delay: 0.1s; }
+      .wave span:nth-child(3) { animation-delay: 0.2s; }
+      .wave span:nth-child(4) { animation-delay: 0.3s; }
+      .wave span:nth-child(5) { animation-delay: 0.4s; }
+      .wave span:nth-child(6) { animation-delay: 0.5s; } /* Space */
+      .wave span:nth-child(7) { animation-delay: 0.6s; }
+      .wave span:nth-child(8) { animation-delay: 0.7s; }
+      .wave span:nth-child(9) { animation-delay: 0.8s; }
+      .wave span:nth-child(10){ animation-delay: 0.9s; }
+      .wave span:nth-child(11){ animation-delay: 1s; }
+      .wave span:nth-child(12){ animation-delay: 1.1s; }
+    
+      @keyframes waveUpDown {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
+      }
+    
+    /* Text Effect Styles */
+    .text-effect {
+        color: #009933;
+        font-family: "play", sans-serif;
+        font-size: 80px !important;
+        font-weight: 900;
+        text-align: center;
+        letter-spacing: 3px;
+        margin-bottom: 30px; /* Add space below the text */
+        white-space: nowrap; /* Keep text in one line */
+      }
+      
+      .text-effect span {
+        display: inline-block;
+        animation: animate 0.9s infinite;
+      }
+      
+      .text-effect span:nth-child(2) { animation-delay: 0.1s; }
+      .text-effect span:nth-child(3) { animation-delay: 0.2s; }
+      .text-effect span:nth-child(4) { animation-delay: 0.3s; }
+      .text-effect span:nth-child(5) { animation-delay: 0.4s; }
+      .text-effect span:nth-child(6) { animation-delay: 0.5s; }
+      
+      @keyframes animate {
+        50% {
+          color: #0eae57;
+          transform: translateY(-20%);
+        }
+      }
+    
+      /* Social Media B Shape */
+      .social-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+      }
+      
+      .main {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+        align-items: center;
+        margin-top: 30px; /* Space between text and social icons */
+      }
+      
+      .up, .down {
+        display: flex;
+        flex-direction: row;
+        gap: 0.5em;
+      }
+      
+      .card {
+        width: 70px;
+        height: 70px;
+        outline: none;
+        border: none;
+        background: white;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        position: relative;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: transform 0.3s;
+      }
+      
+      .card:hover {
+        transform: translateY(-5px);
+      }
+      
+      .color-change {
+        color: #1d9c06;
+      }
+      .foot{
+        margin-top: -76px;
+      }
+      
+      /* Media Queries */
+      @media only screen and (max-width: 990px) {
+        .text-effect { font-size: 70px; }
+      }
+      
+      @media only screen and (max-width: 767px) {
+        .text-effect { font-size: 70px; }
+        .foot{
+            margin-top: -40px;
+          }
+      }
+      
+      @media only screen and (max-width: 576px) {
+        .text-effect { 
+          font-size: 70px; 
+          margin-bottom: 20px;
+        }
+        
+        .card {
+          width: 60px;
+          height: 60px;
+        }
+        
+        .social-container {
+          padding: 10px;
+        }
+      }
+      
+      /* .card svg {
+        width: 60%; 
+        height: 60%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: fill 0.2s ease-in-out; 
+      } */
+      
+      .instagram { fill: #cc39a4; }
+      .twitter { fill: #03A9F4; }
+      .github { fill: black; }
+      .discord { fill: #8c9eff; }
+      
+      /* .card:hover {
+        cursor: pointer;
+        scale: 1.1;
+      } */
+      
+      .card1 { border-radius: 10px 5px 5px 5px;}
+      .card2 { border-radius: 5px 40px 5px 5px;}
+      .card3 { border-radius: 5px 5px 5px 10px;}
+      .card4 { border-radius: 5px 5px 70px 5px;}
+      .card5 { border-radius: 5px 5px 5px 10px;}
+      .card6{ border-radius: 5px 70px 10px 5px;}
+      .card7{ border-radius: 5px 5px 10px 5px;}
+      .card8{ border-radius: 5px 5px 40px 5px;}
+    /* Responsive Styles */
+    @media (max-width: 992px) {
+        .hero-title {
+            font-size: 3rem;
+        }
+    
+        .nav-arrow {
+            width: 40px;
+            height: 40px;
+        }
+    }
+    
+    
+      /* Mobile-only dropdowns that will definitely be in the same row */
+    .mobile-only-dropdowns {
+        margin: 30px 0;
+      }
+      
+      .mobile-only-dropdowns .footer-dropdown-toggle {
+        color: white;
+        font-size: 15px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 15px;
+        padding: 5px;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+      }
+      
+      .mobile-only-dropdowns .footer-dropdown-toggle i {
+        transition: transform 0.3s ease;
+      }
+      
+      .mobile-only-dropdowns .footer-dropdown-toggle i.rotate {
+        transform: rotate(180deg);
+      }
+      
+      .mobile-only-dropdowns .footer-dropdown-menu {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+      }
+      
+      .mobile-only-dropdowns a {
+        color: white;
+        text-decoration: none;
+        padding: 5px 0;
+        display: block;
+        font-size: 14px;
+      }
+      
+      .mobile-only-dropdowns a:hover {
+        color: #009933;
+      }
+      
+      @media (max-width: 576px) {
+        .mobile-only-dropdowns .footer-dropdown-toggle {
+          font-size: 25px;
+        }
+        
+        .mobile-only-dropdowns a {
+          font-size: 13px;
+        }
+      }
+    
+      /* Animation for "Your Vision Our Code!" */
+    @keyframes float {
+        0% {
+          transform: translateY(0px);
+          color: white;
+        }
+        25% {
+          color: #009933;
+        }
+        50% {
+          transform: translateY(-15px);
+          color: #5ae46b;
+        }
+        75% {
+          color: #009933;
+        }
+        100% {
+          transform: translateY(0px);
+          color: white;
+        }
+      }
+      
+      /* Apply the animation to the heading */
+      .vision-text {
+        animation: float 4s ease-in-out infinite;
+        display: inline-block;
+      }
+      
+      /* Make sure inline styles don't interfere */
+      .footer h2.lh-1.magnet {
+        font-size: 5rem;
+        transform: none !important;
+        transition: color 0.3s ease;
+      }
+      
+      /* Responsive adjustments */
+      @media (max-width: 991px) {
+        .footer h2.lh-1.magnet {
+          font-size: 3.5rem !important;
+        }
+      }
+      
+      @media (max-width: 767px) {
+        .footer h2.lh-1.magnet {
+          font-size: 2.5rem !important;
+        }
+      }
+      
+      @media (max-width: 576px) {
+        .footer h2.lh-1.magnet {
+          font-size: 4rem !important;
+        }
+      }
+      /* Word-by-word animation */
+    @keyframes floatWord {
+        0% {
+          transform: translateY(0px);
+          color: white;
+        }
+        50% {
+          transform: translateY(-10px);
+          color: #009933;
+        }
+        100% {
+          transform: translateY(0px);
+          color: rgb(228, 226, 226);
+        }
+      }
+      
+      .vision-word {
+        display: inline-block;
+        animation: floatWord 4s ease-in-out infinite;
+      }
+      
+      /* Offset each word's animation */
+      .vision-word:nth-child(1) {
+        animation-delay: 0s;
+      }
+      .vision-word:nth-child(2) {
+        animation-delay: 0.5s;
+      }
+      .vision-word:nth-child(3) {
+        animation-delay: 1s;
+      }
+      .vision-word:nth-child(4) {
+        animation-delay: 1.5s;
+      }
